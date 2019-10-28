@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kysely: opiskelijoiden vapaa-aika</title>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<h3>Haaga-Helia</h3>
+<h3>Digiprojekti DIG4TN022-3003</h3>
+<h1>Kysely: Opiskelijoiden vapaa-aika</h1>
+
+
+        
+<div class="">
+        <b>Koulutusohjelma:</b><br>
+       <label> <select id="koulutus">
+          <option value="fina">Finanssi- ja talousasiantuntijan ko</option>
+		  <option value="hotra">Hotelli- ja ravintola-alan liikkeenjohdon ko</option>
+          <option value="assi">Johdon assistenttityön ja kielten ko</option>
+		  <option value="joura">Journalismin ko</option>
+          <option value="liiketalous">Liiketalouden ko</option>
+          <option value="matkailu">Matkailun ko</option>
+          <option value="matkailulii">Matkailun liikkeenjohdon ko</option>
+          <option value="myynti">Myyntityön ko</option>
+          <option value="myyntivis">Myynnin ja visuaalisen markkinoinnin ko</option>
+		  <option value="tiko">Tietojenkäsittelyn ko</option>
+		  <option value="envastaa">Foliohattuni on tiukalla, enkä halua vastata</option>
+        </select> </label>
+		<br><br>
+      <b>Opiskeluvuosi:</b><br>
+		<label>
+         <input type="radio" name="vuosi" value="1"> 1
+		 </label>
+         <label>
+         <input type="radio" name="vuosi" value="2"> 2
+        </label>
+         <label>
+         <input type="radio" name="vuosi" value="3"> 3
+        </label>
+         <label>
+         <input type="radio" name="vuosi" value="4"> 4 tai enemmän
+        </label>
+		<br><br>
+       <b> Mitä teet vapaa-ajallasi:</b><br>
+        <label>
+         <input type="checkbox" name="vapaa" value="perhe"> Vietän aikaa perheen kanssa
+        </label>
+          <label>
+         <input type="checkbox" name="vapaa" value="ystava"> Vietän aikaa ystävien kanssa
+        </label>
+            <label>
+         <input type="checkbox" name="vapaa" value="harrastus"> Vietän aikaa harrastuksissa
+        </label>
+		<br>
+           <label>
+         <input type="checkbox" name="vapaa" value="tyo"> Käyn töissä
+        </label>
+		    <label>
+         <input type="checkbox" name="vapaa" value="tyo"> Teen vapaa-ehtoistyötä
+        </label>
+		    <label>
+         <input type="checkbox" name="vapaa" value="tyo"> Opiskelen 
+        </label>
+		
+		 <input type="checkbox" name="vapaa" value="tyo"> Rentoudun 
+        </label>
+		<br><br>
+        <b>Vapaa-aikaa on mielestäni riittävästi (1 ei ollenkaan - 5 kyllä) :</b><br>
+		<label>
+         <input type="radio" name="riittavasti" value="1"> 1
+		 </label>
+         <label>
+         <input type="radio" name="riittavasti" value="2"> 2
+        </label>
+         <label>
+         <input type="radio" name="riittavasti" value="3"> 3
+        </label>
+         <label>
+         <input type="radio" name="riittavasti" value="4"> 4 
+        </label>
+		<input type="radio" name="riittavasti" value="4"> 5 
+        </label>
+		
+        <br><br>
+        <input type="submit" value="lähetä" onclick="kysely()">
+        <input type="reset" value="tyhjennä">
+        </fieldset>
+
+    </div>
+
+   
+
+</body>
+</html>
