@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<title>Digiprojekti - kysely</title>	
+	
+</head>
+<body>
+
+
+<script 
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>	
+<script>
+	$.getJSON("http://tinyhouse-pollot.herokuapp.com/questions", function(data){
+		var items=[]; //taulukko johon lisätään lomake
+
+		//jos kaarisulku
+		//items.push(data.title);
+
+		//jos hakasulku
+		$.each(data,function(key,d){
+			items.push({ id: 1 });
+			
+		});
+
+		//sivun lomakkeen tulostus
+	
+	$("#lomake").append(items.join(""));
+});
+
+
+</script>
+		
+</body>
+</html>
